@@ -1,1 +1,34 @@
 // Navigation code here
+
+nav {
+	.flex-cnowrap;
+	.customFlex (space-between, space-around, center);
+	color: @nav-font;
+	background: @nav-bg;
+	border: 2px solid @nav-border;
+	margin: 0 auto;
+	
+	@media @phone {
+		width: 80%;
+	}
+
+	
+	.title {
+		.flex-rwrap;
+		.customFlex (center, center, center);
+	}
+	
+	.links {
+		.flex-rwrap;
+		.customFlex (space-between, center, center);
+		width: 80%;
+		
+		a {
+			text-decoration: none;
+			.flex-rwrap;
+			.customFlex (space-between, space-around, center);
+			margin: 0 auto;
+			color: @nav-font;
+		}
+	}
+}

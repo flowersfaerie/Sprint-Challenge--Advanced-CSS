@@ -1,1 +1,36 @@
 // Mixins Here
+
+.flex-rwrap {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-rnowrap {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.flex-cwrap {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.flex-cnowrap {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.flex-crevwrap {
+	display: flex;
+	flex-flow: column-reverse nowrap;
+}
+
+.customFlex (@justify, @content, @items) {
+	justify-content: @justify;
+	align-content: @content;
+	align-items: @items;
+}
+
+.btn-border (@width, @style, @color) {
+	border: @width @style @color;
+}
